@@ -84,7 +84,7 @@ function gifAlert(user, gif, audio, type) {
     //uncomment this if you want to play audio
     //audio.play();
     container.innerHTML = `
-      <h1 class="text-shadows">${user + generateTitle[type]}</h1>
+      //<h1 class="text-shadows">${user + generateTitle[type]}</h1>
       <img src="${gif}" />
     `;
     container.style.opacity = 1;
