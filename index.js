@@ -34,6 +34,10 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
   if (command == "yo") {
     new gifAlert(user, beyGif, pewAudio, command);
   }
+  
+  if (command == "tspin") {
+    new gifAlert(user, tspin, audio, command);
+  }
 
   if (command == "welcome") {
     new gifAlert(message, welcomeGif, magicChime, command);
@@ -76,7 +80,8 @@ const generateTitle = {
 
 function gifAlert(user, gif, audio, type) {
   queue.add(async () => {
-    audio.play();
+    //uncomment this if you want to play audio
+    //audio.play();
     container.innerHTML = `
       <h1 class="text-shadows">${user + generateTitle[type]}</h1>
       <img src="${gif}" />
