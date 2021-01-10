@@ -13,7 +13,7 @@ const pewAudio = new Audio("horn.wav");
 const magicChime = new Audio("Magic_Chime.mp3");
 
 /* GIFs */
-const tspin = "https://github.com/AlanGervin/beybot/blob/gh-pages/t-spin2.gif"
+const tspin = "https://github.com/AlanGervin/beybot/blob/gh-pages/t-spin2.gif?raw=true"
 const beyGif = "https://media.giphy.com/media/VxkNDa92gcsRq/giphy.gif";
 const welcomeGif = "https://media.giphy.com/media/l3V0doGbp2EDaLHJC/giphy.gif";
 const pizzaGif = "https://media.giphy.com/media/3o6nUXaNE4wdhq8Foc/giphy.gif";
@@ -37,7 +37,7 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
   }
   
   if (command == "tspin") {
-    new gifAlert(user, tspin, audio, command);
+    new gifAlert(user, tspin, pewAudio, command);
   }
 
   if (command == "welcome") {
@@ -84,7 +84,6 @@ function gifAlert(user, gif, audio, type) {
     //uncomment this if you want to play audio
     //audio.play();
     container.innerHTML = `
-      <h1 class="text-shadows">${user + generateTitle[type]}</h1>
       <img src="${gif}" />
     `;
     container.style.opacity = 1;
