@@ -37,7 +37,7 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
   }
   
   if (command == "tspin") {
-    new gifAlert(user, tspin, audio, command);
+    new gifAlert(user, tspin, pewAudio, command);
   }
 
   if (command == "welcome") {
