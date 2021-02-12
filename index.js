@@ -2,9 +2,11 @@
 const twitchTvHandle = "swervinmaximus";
 const PAUSE_DURATION = 30 * 1000; // 30 seconds
 const DISPLAY_DURATION = 1 * 1000; // 10 seconds
+var deathCounter = 0;
 
 /* DOM */
 const container = document.querySelector(".alerts");
+const deathCount = document.querySelector(".deathCount");
 const img = new Image();
 const queue = new Queue();
 
@@ -96,3 +98,5 @@ function gifAlert(user, gif, audio, type) {
 
   });
 }
+
+deathCountContainer.innterHTML =`${deathCounter}`;
