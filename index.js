@@ -42,6 +42,10 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
     new gifAlert(user, tspin, pewAudio, command);
   }
 
+  if (command == "oof") {
+    death.Counter++;
+  }
+  
   if (command == "welcome") {
     new gifAlert(message, welcomeGif, magicChime, command);
   }
