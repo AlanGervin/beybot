@@ -99,4 +99,4 @@ function gifAlert(user, gif, audio, type) {
   });
 }
 
-deathCount.innterHTML =`${deathCounter}`;
+deathCount.innerHTML =`${deathCounter}`;
