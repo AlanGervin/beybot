@@ -43,7 +43,7 @@ ComfyJS.onCommand = (user, command, message, flags, extra) => {
   }
 
   if (command == "oof") {
-    death.Counter++;
+    deathCounter++;
   }
   
   if (command == "welcome") {
